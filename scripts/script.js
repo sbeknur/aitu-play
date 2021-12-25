@@ -17,3 +17,4 @@ var transformProperty = getSupportedPropertyName(transform);
 if (transformProperty) {
     item.style[transformProperty] = translate3d(300, 0, 0);
 }
+

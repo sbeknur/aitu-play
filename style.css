@@ -26,6 +26,8 @@ p {
 	margin: 0 0 10px;
 }
 
+
+
 /*CONTAINER
 =================*/
 .container {
@@ -35,13 +37,15 @@ p {
 	padding: 0 15px;
 }
 
+
+
 /*HEADER
 =================*/
 .header {
 	width: 100%;
 	height: 100px;
     
-    background-color: #3442c1;
+    background-color: #2940c6;
 }
 
 .header__inner {
@@ -50,6 +54,8 @@ p {
 	align-items: center; /*В наешм случае выравнивает навигацию по центру относительно логотипа*/
 	padding: 10px 0;
 }
+
+
 
 /*NAV
 =================*/
@@ -61,11 +67,30 @@ p {
 }
 
 .nav__link {
+	position: relative;
 	margin-left: 45px;
 	color: #fafafa;
-	text-decoration: none; /*Убирает подчеркивание снизу ссылки*/
+	cursor: pointer;
 
+	text-decoration: none; /*Убирает подчеркивание снизу ссылки*/
 	transition: color 0.1s linear; /*Добавляет замедление для Opacity*/
+}
+
+.nav__link::before {
+	content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 1.5px;
+	background-color: #000000;
+  }
+  
+.nav__link:hover:before {
+	width: 100%;
+}
+  
+.nav__link::before {
+	transition: width 0.35s;
 }
 
 .nav__link:first-child {
@@ -76,6 +101,8 @@ p {
 .nav__link:hover {
 	color: #000000;
 }
+
+
 
 /*INTRO
 =================*/
