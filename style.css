@@ -4,7 +4,7 @@ body {
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
 
-    background-color: #3A439A;
+    background-color: #29409d;
 }
 
 *,
@@ -54,8 +54,6 @@ p {
 	justify-content: space-between; /*Появится расстоняние между элементами*/
 	align-items: center; /*В наешм случае выравнивает навигацию по центру относительно логотипа*/
 	padding: 10px 0;
-
-	border-bottom: 0.2px solid #ffffff;
 }	
 
 
@@ -70,6 +68,11 @@ p {
 }
 
 .nav__link {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px;
+
 	position: relative;
 	margin-left: 45px;
 	color: #fafafa;
@@ -105,14 +108,25 @@ p {
 	color: #000000;
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(41, 64, 198, 0.7);
+}
+
+.sticky + body {
+	padding-top: 60px;
+  }
+
 
 
 /*INTRO
 =================*/
 .intro {
 	display: flex;
-	height: 1000px;
-	padding-top: 100px; /*Создает отступ*/
+	height: 1150px;
+	padding-top: 150px; /*Создает отступ*/
 
 	background: url(img/background.png) no-repeat center; /*Добваляетя фон, не повторяется, по центру*/
 	background-size: cover; /*Покрывает предоставленную облась пропорционально*/
@@ -132,4 +146,12 @@ p {
 	color: #000000;
 	text-transform: uppercase;
 	text-shadow:#FAFAFA 2px 2px 2px;
+}
+
+
+
+/*CONTENT
+=================*/
+.content {
+	height: 1000px;
 }
