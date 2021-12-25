@@ -49,11 +49,14 @@ p {
 }
 
 .header__inner {
+	position: relative;
 	display: flex; /*Элементы становятся резиновыми*/
 	justify-content: space-between; /*Появится расстоняние между элементами*/
 	align-items: center; /*В наешм случае выравнивает навигацию по центру относительно логотипа*/
 	padding: 10px 0;
-}
+
+	border-bottom: 0.2px solid #000000;
+}	
 
 
 
