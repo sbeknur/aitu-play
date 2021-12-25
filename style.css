@@ -55,12 +55,9 @@ p {
 	align-items: center; /*В наешм случае выравнивает навигацию по центру относительно логотипа*/
 	padding: 10px 0;
 
-	border-bottom: 0.2px solid #000000;
+	border-bottom: 0.2px solid #ffffff;
 }	
 
-#header {
-	overflow: hidden;
-  }
 
 
 /*NAV
