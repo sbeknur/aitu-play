@@ -6,8 +6,6 @@ function getSupportedPropertyName(properties) {
     }
     return null;
 }
-
-alert("Alibi LOX!!");
   
 var transform = ["transform", "msTransform", "webkitTransform", "mozTransform", "oTransform"];
   
