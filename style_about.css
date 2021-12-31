@@ -22,6 +22,7 @@ h4,
 h5,
 h6 {
 	margin: 0; /*Убирает стандартные отступы у заголовок*/
+	text-align: center;
 }
 
 p {
@@ -146,7 +147,17 @@ p {
 	text-shadow:#FAFAFA 2px 2px 2px;
 }
 
+#img1{
+	float:left;
+	margin-right: 20px;
+	border: 2px solid rgb(79, 79, 79);
+}
 
+#img2{
+	float:right;
+	margin-left: 20px;
+	border: 2px solid rgb(79, 79, 79);
+}
 
 /*STARS
 =================*/
