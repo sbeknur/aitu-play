@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+
+    background: url(img/background_original.png) no-repeat top;
+	background-size: auto auto;
+	background-attachment:fixed
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box; /*При расчетё граница входит в контейнер*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0; /*Убирает стандартные отступы у заголовок*/
+	text-align: center;
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+
+
+/*CONTAINER
+=================*/
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+
+/*HEADER
+=================*/
+.header {
+	width: 100%;
+	height: 100px;
+    
+    background-color: #444dd3;
+}
+
+.header__inner {
+	position: relative;
+	display: flex; /*Элементы становятся резиновыми*/
+	justify-content: space-between; /*Появится расстоняние между элементами*/
+	align-items: center; /*В наешм случае выравнивает навигацию по центру относительно логотипа*/
+	padding: 10px 0;
+}	
+
+
+
+/*NAV
+=================*/
+.nav {
+	display: flex;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase; /*Текст пишется заглавными буквами*/
+}
+
+.nav__link {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px;
+
+	position: relative;
+	margin-left: 45px;
+	color: #fafafa;
+	cursor: pointer;
+
+	text-decoration: none; /*Убирает подчеркивание снизу ссылки*/
+	transition: color 0.1s linear; /*Добавляет замедление для Opacity*/
+}
+
+.nav__link::before {
+	content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 1.5px;
+	background-color: #000000;
+  }
+  
+.nav__link:hover:before {
+	width: 100%;
+}
+  
+.nav__link::before {
+	transition: width 0.35s;
+}
+
+.nav__link:first-child {
+	/*Первая дочерная*/
+	margin-left: 0;
+}
+
+.nav__link:hover {
+	color: #000000;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(41, 64, 198, 0.7);
+}
+
+.sticky + body {
+	padding-top: 60px;
+  }
+
+
+
+/*INTRO
+=================*/
+.intro {
+	display: flex;
+	padding-top: 50px; /*Создает отступ*/	
+}
+
+.intro__inner {
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+	text-align: center; /*Выравнивает по горизонтали, по центру*/
+}
+
+.intro__title_top, .intro__title_bottom {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 70px;
+	line-height: 0.8; /*Настраивает отступы между строками*/
+	color: #000000;
+	text-transform: uppercase;
+	text-shadow:#FAFAFA 2px 2px 2px;
+}
+
+#img1{
+	float:left;
+	margin-right: 20px;
+	border: 2px solid rgb(79, 79, 79);
+}
+
+#img2{
+	float:right;
+	margin-left: 20px;
+	border: 2px solid rgb(79, 79, 79);
+}
+
+/*STARS
+=================*/

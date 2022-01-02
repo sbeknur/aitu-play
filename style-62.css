@@ -1,0 +1,100 @@
+@import url("http://fonts.googleapis.com/css?family=Architects+Daughter");
+
+
+h1,h2,h3,h4,h5,h6 {
+	color: #666;
+	font-family: 'Architects Daughter', cursive;
+	font-weight: 600;
+	margin: 2px 0px;
+	padding: 0px;
+}
+h1 {
+	font-size: 30px;
+	line-height: 45px;
+}
+h2 {
+	font-size: 25px;
+	line-height: 40px;
+}
+h3 {
+	font-size: 22px;
+	line-height: 37px;
+}
+h4 {
+	font-size: 18px;
+	line-height: 33px;
+}
+h5 {
+	font-size: 15px;
+	line-height: 30px;
+}
+h6 {
+	font-size: 13px;
+	line-height: 28px;
+}
+p {
+	margin: 2px 0px;
+	padding: 0px;
+	margin-bottom:5px;
+	line-height:28px;
+}
+a{
+	text-decoration: none;
+	color: #777;
+}
+a:hover,a:active,a:focus {
+	outline: 0;
+	text-decoration: none;
+	color: #999;
+}
+hr {
+	margin: 10px 0px;
+	padding: 0px;
+	border-top: 0px;
+	border-bottom: 1px solid #eee;
+}
+:focus {
+	outline:none;
+}
+::-moz-focus-inner {
+	border:0;
+}
+
+/* UI X */
+
+.ui-62{
+	color: #666666;
+	font-size: 13px;
+	line-height: 23px;
+	background: #fff;
+	font-family: 'Press Start 2P', cursive;
+	-webkit-font-smoothing: antialiased;
+
+	border:1px solid #eee;
+	max-width:800px;
+	margin:40px auto;
+	background:#fcfcfc url("/img/paper.png") repeat;
+	position:relative;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+}
+.ui-62 .ui-bor{
+	width:70px;
+	position:absolute;
+	height:100%;
+	border-right:double #ff7c7c;
+}
+.ui-62 .ui-main{
+	margin-left:75px;
+	padding:25px;
+}
+.ui-62 .ui-main h2{
+	font-weight:normal;
+	font-size:25px;
+	line-height:30px;
+	color:#888;	
+}
+.ui-62 .ui-main p{
+	font-size:16px;
+	line-height:36px;
+	color:#999;
+}
