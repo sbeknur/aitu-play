@@ -134,7 +134,7 @@ p {
 .intro__inner {
 	width: 100%;
 	max-width: 970px;
-	margin: 0 auto;
+	margin: 0 auto;	
 	text-align: center; /*Выравнивает по горизонтали, по центру*/
 }
 
@@ -151,12 +151,14 @@ p {
 	float:left;
 	margin-right: 20px;
 	border: 2px solid rgb(79, 79, 79);
+	background-color: white;
 }
 
 #img2{
 	float:right;
 	margin-left: 20px;
 	border: 2px solid rgb(79, 79, 79);
+	background-color: white;
 }
 
 /*STARS
