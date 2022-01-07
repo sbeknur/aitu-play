@@ -150,6 +150,7 @@ p {
 
 #img1{
 	float:left;
+	height: 200px;
 	margin-right: 20px;
 	border: 2px solid rgb(79, 79, 79);
 	background-color: white;
@@ -157,10 +158,29 @@ p {
 
 #img2{
 	float:right;
+	height: 200px;
 	margin-left: 20px;
 	border: 2px solid rgb(79, 79, 79);
 	background-color: white;
 }
 
-/*STARS
+
+
+/*FOOTER
 =================*/
+.footer {
+	padding: 20px 0;
+
+	background-color: rgb(15, 12, 29);
+}
+
+.footer__text {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #b1b1b1;
+}
+
+.footer__text span {
+	color: #fafafa;
+}

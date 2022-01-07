@@ -1,0 +1,29 @@
+/*FOOTER
+=================*/
+.footer {
+    height: 132px;
+	padding: 20px 0;
+
+	background: url(/img/footer_bcg.png);
+}
+
+
+
+/*SUBFOOTER
+=================*/
+.subfooter {
+	padding: 20px 0;
+
+	background-color: rgb(108, 94, 181);
+}
+
+.subfooter__text {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #b1b1b1;
+}
+
+.subfooter__text span {
+	color: #fafafa;
+}

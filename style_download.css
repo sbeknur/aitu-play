@@ -1,12 +1,13 @@
 body {
     margin: 0;
+	height: 100%;
 
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
 
     background: url(img/background_original.png) no-repeat top;
 	background-size: auto auto;
-	background-attachment:fixed
+	overflow: hidden;
 }
 
 *,
@@ -148,21 +149,12 @@ p {
 	text-shadow:#FAFAFA 2px 2px 2px;
 }
 
-#img1{
-	float:left;
-	margin-right: 20px;
-	border: 2px solid rgb(79, 79, 79);
-	background-color: white;
-}
 
-#img2{
-	float:right;
-	margin-left: 20px;
-	border: 2px solid rgb(79, 79, 79);
-	background-color: white;
-}
 
+/*CONTENT
+=================*/
 table{
+	display: block;
 	margin:auto;
 	width: 65%;
 	margin-top: 1.5em;
@@ -173,6 +165,10 @@ table{
 td{
 	text-align: center;
 	width:20%;
+}
+
+.images:hover {
+	height: 105%;
 }
 
 .download__button {
@@ -193,4 +189,29 @@ td{
 
 .button__img1:hover {
 	display: none;
+}
+
+
+
+/*FOOTER
+=================*/
+.footer {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	padding: 20px 0;
+
+	background-color: rgb(15, 12, 29);
+}
+
+.footer__text {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #b1b1b1;
+}
+
+.footer__text span {
+	color: #fafafa;
 }
