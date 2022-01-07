@@ -88,9 +88,10 @@ p {
 .nav__link::before {
 	content: '';
 	position: absolute;
-	left: 0; bottom: -5px;
+	left: 0; 
+	bottom: -5px;
 	width: 0;
-	height: 1.5px;
+	height: 2.5px;
 	background-color: #000000;
   }
   
@@ -161,5 +162,38 @@ p {
 	background-color: white;
 }
 
-/*STARS
-=================*/
+table{
+	margin:auto;
+	width: 65%;
+	margin-top: 1.5em;
+	background-color:#fafafa;
+	border-radius: 20px;
+}
+
+td{
+	text-align: center;
+	width:20%;
+}
+
+.dowload__button {
+	content: " ";
+	width: 222px;
+	height: 108px;
+	display: block;
+}
+
+.button_img {
+	text-align: center;
+	margin-top: 10px;
+	background: url(img/play_1.png) no-repeat center;
+	width: 222px;
+	height: 108px;
+}
+.button_img:hover{
+	text-align: center;
+	background: url(img/play_2.png) no-repeat center;
+}
+.button_img a{
+	display: block; /* Ссылка как блочный элемент */
+    height: 100%; /* Высота на весь слой */
+}
