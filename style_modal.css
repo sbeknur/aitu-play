@@ -1,101 +1,105 @@
 .modal {
-  display: none;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-color: rgba(43, 42, 44, 0.8);
-  position: fixed;
-  overflow: auto;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgba(43, 42, 44, 0.8);
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .modal.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .modal__dialog {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  background-color: #ffffff;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    background-color: #ffffff;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .modal__dialog--sm {
-  max-width: 900px;
+    max-width: 900px;
 }
 
 .modal__close {
-  width: 32px;
-  height: 39px;
-  position: absolute;
-  background: none;
-  border: 0;
-  cursor: pointer;
-  top: 0.9rem;
-  right: 1.5rem;
-  z-index: 1;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+    width: 32px;
+    height: 39px;
+    position: absolute;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    top: 0.9rem;
+    right: 1.5rem;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .modal__close:hover {
-  -webkit-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
 
 .modal__close:focus {
-  outline: none;
+    outline: none; 
 }
 
 .modal__content {
-  padding: 5rem 1rem;
+    padding: 5rem 1rem; 
 }
 
 .modal__title {
-  margin: 0 0 3.6rem;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: #2b2a2c;
-  font-weight: 700;
+    margin: 0 0 3.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #2b2a2c;
+    font-weight: 700;
 }
 
 .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: url(https://placehold.it/450x700) right center no-repeat;
-  }
-  
-  .contact__left {
+}
+
+.contact__left {
     width: 47%;
     margin: 1.86rem 0;
     padding: 0 0 0 2rem;
-  }
+}
+
+.contact__right {
+    width: 53%;
+    background: url(/img/message.png) center no-repeat;
+}
   
-  .contact__info {
+.contact__info {
     margin: 2rem 0 3rem;
     padding: 0;
     list-style: none;
     font-size: 0.94rem;
     color: #2b2a2c;
     font-weight: 300;
-  }
-  
-  .contact__info-item {
+}
+
+.contact__info-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,39 +107,39 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 0 0 0.75rem;
-  }
-  
-  .contact__info-item:last-child {
-    margin: 0;
-  }
-  
-  .contact__info-icon {
+}
+
+.contact__info-item:last-child {
+    margin: 0; 
+}
+
+.contact__info-icon {
     height: 15px;
     margin: 0 0.75rem 0 0;
-  }
+}
 
-  .modal__subtitle {
+.modal__subtitle {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.06rem;
     color: #2b2a2c;
     font-weight: 400;
-  }
-  
-  .form__group {
+}
+
+.form__group {
     margin: 0 0 1.8rem;
-  }
-  
-  label {
+}
+
+label {
     display: inline-block;
     margin: 0 0 0.6rem;
     font-size: 0.8rem;
     color: #2b2a2c;
     font-weight: 700;
-  }
-  
-  input,
-  textarea {
+}
+
+input,
+textarea {
     display: block;
     width: 100%;
     padding: 1.3rem 1.8rem;
@@ -148,58 +152,58 @@
     -webkit-transition: border-color 0.2s linear;
     transition: border-color 0.2s linear;
     color: #2b2a2c;
-  }
-  
-  input:focus,
-  textarea:focus {
+}
+
+input:focus,
+textarea:focus {
     outline: none;
     border-color: aqua;
-  }
-  
-  input::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
     color: #2b2a2c;
-  }
-  
-  input:-ms-input-placeholder,
-  textarea:-ms-input-placeholder {
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
     color: #2b2a2c;
-  }
-  
-  input::-ms-input-placeholder,
-  textarea::-ms-input-placeholder {
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
     color: #2b2a2c;
-  }
-  
-  input::placeholder,
-  textarea::placeholder {
+}
+
+input::placeholder,
+textarea::placeholder {
     color: #2b2a2c;
-  }
-  
-  textarea {
+}
+
+textarea {
     height: 200px;
     resize: none;
-  }
-  
-  /* HELPER */
-  .center {
+}
+
+/* HELPER */
+.center {
     text-align: center;
-  }
-  
-  .right {
+}
+
+.right {
     text-align: right;
-  }
-  
-  .img {
+}
+
+.img {
     display: block;
     max-width: 100%;
     height: auto;
-  }
-  
-  .mb-0 {
+}
+
+.mb-0 {
     margin-bottom: 0;
-  }
-  
-  .hide {
+}
+
+.hide {
     display: none;
-  }
+}
