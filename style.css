@@ -6,6 +6,10 @@ body {
 	background: rgb(15, 12, 29)
 }
 
+body.no-scroll {
+	overflow: hidden;
+  }
+
 *,
 *:before,
 *:after {
@@ -41,6 +45,7 @@ p {
 /*HEADER
 =================*/
 .header {
+	position: fixed;
 	width: 100%;
 	height: 100px;
 	
@@ -55,6 +60,7 @@ p {
 	justify-content: space-between; /*Появится расстоняние между элементами*/
 	align-items: center; /*В наешм случае выравнивает навигацию по центру относительно логотипа*/
 	padding: 10px 0;
+	transition: all 0.4s ease;
 }	
 
 
@@ -110,15 +116,30 @@ a{
 	margin-left: 0;
 }
 
+.nav__link:last-child:hover:before {
+	width: 0;
+}
+
 .nav__link:hover {
 	color: #000000;
 }
 
+.nav__link--btn {
+	padding: 0.66rem 2rem;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	-webkit-transition: background-color 0.2s linear, color 0.2s linear;
+	transition: background-color 0.2s linear, color 0.2s linear;
+  }
+  
+.nav__link--btn:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
 .sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background: rgba(15, 12, 29, 0.0);
+	background: none;
+	transition: all 0.4s ease;
 }
 
 
@@ -127,8 +148,8 @@ a{
 =================*/
 .intro {
 	display: flex;
-	height: 1000px;
-	padding-top: 100px; /*Создает отступ*/
+	height: 1200px;
+	padding-top: 200px; /*Создает отступ*/
 
 	background: url(img/background.png) no-repeat center; /*Добваляетя фон, не повторяется, по центру*/
 	background-size: cover; /*Покрывает предоставленную облась пропорционально*/
@@ -139,7 +160,7 @@ a{
 	max-width: 1170px;
 	margin: 0 auto;
 	text-align: center; /*Выравнивает по горизонтали, по центру*/
-	padding-bottom: 711px;
+	padding-bottom: 811px;
 	border-bottom: 1px solid #fafafa;
 }
 
@@ -158,7 +179,7 @@ a{
 =================*/
 .content {
 	background: rgb(77,69,162);
-background: linear-gradient(180deg, rgba(77,69,162,1) 0%, rgba(61,54,131,1) 11%, rgba(34,29,78,1) 37%, rgba(30,25,70,1) 62%, rgb(15, 12, 29) 100%);
+	background: linear-gradient(180deg, rgba(77,69,162,1) 0%, rgba(61,54,131,1) 11%, rgba(34,29,78,1) 37%, rgba(30,25,70,1) 62%, rgb(15, 12, 29) 100%);
 }
 
 .content__bg {
@@ -309,3 +330,47 @@ img {
 	height: 20px;
 	margin-right: 10px;
 }
+
+
+
+/*BUTTON
+=================*/
+.btn {
+    display: inline-block;
+    min-width: 170px;
+    vertical-align: top;
+    padding: 1.05em 1.7em;
+    border: 2px solid #6a696b;
+    border-radius: 1.8em;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+	font-weight: 600;
+    font-size: 1.06rem;
+    line-height: 1.1;
+    color: #2b2a2c;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: background-color 0.2s linear, color 0.2s linear, border-color 0.2s linear, -webkit-box-shadow 0.2s linear;
+    transition: background-color 0.2s linear, color 0.2s linear, border-color 0.2s linear, -webkit-box-shadow 0.2s linear;
+    transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
+    transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  }
+  
+  .btn:focus {
+    outline: none;
+    /*При фокусе убираем outline*/
+  }
+  
+  .btn:hover {
+    background-color: #2b2a2c;
+    -webkit-box-shadow: 2px 2px 10px rgba(43, 42, 44, 0.24);
+            box-shadow: 2px 2px 10px rgba(43, 42, 44, 0.24);
+    color: #ffffff;
+    border-color: #2b2a2c;
+  }
+  
+  .btn + .btn {
+    margin: 0 0 0 1rem;
+  }
