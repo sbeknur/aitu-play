@@ -271,3 +271,20 @@ td:hover {
 .btn + .btn {
 	margin: 0 0 0 1rem;
 }
+
+
+@media (max-width: 1000px) {
+	body {
+		background: #2f419e url(img/background_original.png) no-repeat top;
+		background-size: auto auto;
+	}
+
+	table {
+		display: block;
+		margin: auto;
+		width: 75%;
+		margin-top: 7rem;
+		background-color:#fafafa;
+		border-radius: 20px;
+	}
+}

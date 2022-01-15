@@ -232,3 +232,11 @@ p {
 .btn + .btn {
 	margin: 0 0 0 1rem;
 }
+
+
+@media (max-width: 1000px) {
+	body {
+		background: #2f419e url(img/background_original.png) no-repeat top;
+		background-size: auto auto;
+	}
+}
