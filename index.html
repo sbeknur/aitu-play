@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style_footer.css">
 	<link rel="stylesheet" href="style_modal.css">
-	
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AITU Play - Home</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,12 +24,15 @@
 					<img src="img/logoBig.png" alt="">
 				</div>
 
-				<nav class="nav">
+				<nav class="nav" id="myNav">
 					<a class="nav__link" href="index.html">home</a>
 					<a class="nav__link" href="/about.html">about us</a>
 					<a class="nav__link" href="/download.html">download</a>
 					<a class="nav__link" href="/forum.html">forum</a>
 					<a class="nav__link nav__link--btn" href="#" data-modal="#modal_hireme">Contact Us</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
 				</nav>
 			</div>
 		</div>
@@ -54,7 +58,7 @@
 				<div class="content__inner">
 					<div class="content__title">
 						<h1>
-							Feel like a student of <br>	Astana IT University
+							Feel like a student of Astana IT University
 						</h1>
 					</div>
 
@@ -100,13 +104,15 @@
 
 					<div class="features">
 						<h1>Features</h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sequi persp</p>
-						<ul>
-							<li><span><img src="/img/star.gif" alt=""></span>Our main goal is to create an advertisement for our university </li>
-							<li><span><img src="/img/star.gif" alt=""></span>Exact model of the whole university</li>
-							<li><span><img src="/img/star.gif" alt=""></span>15+ mini-games</li>
-							<li><span><img src="/img/star.gif" alt=""></span>The game has its own unique style</li>
-						  </ul>
+						<div class="features__inner">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sequi persp</p>
+							<ul>
+								<li><span><img src="/img/star.gif" alt=""></span>Our main goal is to create an advertisement for our university </li>
+								<li><span><img src="/img/star.gif" alt=""></span>Exact model of the whole university</li>
+								<li><span><img src="/img/star.gif" alt=""></span>15+ mini-games</li>
+								<li><span><img src="/img/star.gif" alt=""></span>The game has its own unique style</li>
+						  	</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -189,5 +195,15 @@
 	<script src = "scripts/script.js"></script>
 	<script src = "scripts/header.js"></script>
 	<script src = "scripts/modal.js"></script>
+	<!-- <script>
+		function myFunction() {
+			var x = document.getElementById("myNav");
+			if (x.className === "nav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script> -->
 </body>
 </html>
